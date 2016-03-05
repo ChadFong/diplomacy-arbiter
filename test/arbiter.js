@@ -36,4 +36,24 @@ describe('#loadmap', function() {
     it('displays the full name if possible', function () {
         false.should.equal(true);
     });
+
+    it('has a default boardstate string', function () {
+        false.should.equal(true);
+    });
+});
+
+describe('#possiblemoves', function() {
+    //var map = loadmap();
+    
+    it('returns an object of potential moves for an army', function () {
+        false.should.equal(true);
+    });
+
+    it('returns an object of potential moves for a fleet', function () {
+        false.should.equal(true);
+    });
+
+    it('returns an object of potential moves, specifying what kind of unit can go there', function () {
+        false.should.equal(true);
+    });
 });
