@@ -215,7 +215,17 @@ var abbrToTerr = {
   yonkers: 'yorkshire'
 };
 
+var coastAbbr = {
+  nc: 'north coast',
+  north: 'north coast',
+  ec: 'east coast',
+  east: 'east coast',
+  sc: 'south coast',
+  south: 'south coast',
+};
+
 module.exports = {
   terrToAbbr: terrToAbbr,
-  abbrToTerr: abbrToTerr
+  abbrToTerr: abbrToTerr,
+  coastAbbr: coastAbbr
 };
