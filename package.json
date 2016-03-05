@@ -1,0 +1,27 @@
+{
+  "name": "diplomacy-arbiter",
+  "version": "1.0.0",
+  "description": "Something I can use to compile and visualize my Diplomacy games",
+  "main": "index.js",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholaswold/diplomacy-arbiter.git"
+  },
+  "author": "Nicholas Wold",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/nicholaswold/diplomacy-arbiter/issues"
+  },
+  "homepage": "https://github.com/nicholaswold/diplomacy-arbiter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
