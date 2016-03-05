@@ -1,9 +1,10 @@
 var should = require('chai').should(),
     arbiter = require('../index'),
-    loadmap = arbiter.loadmap;
+    loadmap = arbiter.loadmap,
+    possiblemoves = arbiter.possiblemoves;
 
 describe('#loadmap', function() {
-    //var map = loadmap(); // The traditional diplomacy map gets loaded by default
+    var map = loadmap(); // The traditional diplomacy map gets loaded by default
 
     it('loads the traditional diplomacy map', function() {
         false.should.equal(true);
@@ -43,7 +44,7 @@ describe('#loadmap', function() {
 });
 
 describe('#possiblemoves', function() {
-    //var map = loadmap();
+    var map = loadmap();
     
     it('returns an object of potential moves for an army', function () {
         false.should.equal(true);
