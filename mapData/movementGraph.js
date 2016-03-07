@@ -4,11 +4,18 @@ var territorie = {
     type: 'coastal',
     supply: true,
     landConns: ['rumania', 'constantinople', 'greece', 'serbia'],
-    seaConns: {
-      E: ['rumania', 'black sea', 'constantinople'],
-      S: ['constantinople', 'aegean sea', 'greece']
-    }
-  }, 
+  },
+  'bulgaria east coast': {
+    type: 'coastal',
+    supply: true,
+    seaConns: ['rumania', 'black sea', 'constantinople'],
+  },
+  'bulgaria south coast': {
+    type: 'coastal',
+    supply: true,
+    seaConns: ['constantinople', 'aegean sea', 'greece']
+  },
+
   spain: {
     type: 'coastal',
     supply: true,
@@ -92,212 +99,211 @@ var territorie = {
     type: 'coastal',
     supply: true,
     landConns: ['prussia', 'silesia', 'munich', 'kiel'],
-    seaConns: []
+    seaConns: ['baltic', 'prussia', 'kiel']
   }, 
   'black sea': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['sevastopol', 'armenia', 'ankara', 'constantinople', 'bulgaria', 'rumania']
   }, 
   bohemia: {
-    type: '',
-    supply: ,
-    landConns: [],
+    type: 'inland',
+    supply: false,
+    landConns: ['silesia', 'galicia', 'vienna', 'tyrolia', 'munich'],
     seaConns: []
   }, 
   brest: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['picardy', 'paris', 'gascony'],
+    seaConns: ['english channel', 'picardy', 'gascony', 'mid-atlantic ocean']
   }, 
   budapest: {
-    type: '',
-    supply: ,
-    landConns: [],
+    type: 'inland',
+    supply: true,
+    landConns: ['rumania', 'serbia', 'trieste', 'vienna', 'galicia'],
     seaConns: []
   }, 
   burgundy: {
-    type: '',
-    supply: ,
-    landConns: [],
+    type: 'inland',
+    supply: false,
+    landConns: ['ruhr', 'munich', 'marseilles', 'gascony', 'paris', 'picardy', 'belgium'],
     seaConns: []
   }, 
   clyde: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: false,
+    landConns: ['edinburgh', 'liverpool'],
+    seaConns: ['norwegian sea', 'edinburgh', 'liverpool', 'north atlantic']
   }, 
   constantinople: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['ankara', 'smyrna', 'bulgaria'],
+    seaConns: ['black sea', 'ankara', 'smyrna', 'aegean sea', 'bulgaria east coast', 'bulgaria south coast']
   }, 
   denmark: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['sweden', 'kiel'],
+    seaConns: ['skagerrak', 'sweden', 'baltic sea', 'kiel', 'helgoland bight', 'north sea']
   }, 
   'eastern mediterranean': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['smyrna', 'syria', 'ionian sea', 'aegean sea']
   }, 
   edinburgh: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['yorkshire', 'liverpool', 'clyde'],
+    seaConns: ['norwegian sea', 'north sea', 'yorkshire', 'clyde']
   }, 
   'english channel': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['london', 'north sea', 'belgium', 'picardy', 'brest', 'mid-atlantic ocean', 'irish sea', 'wales']
   }, 
   finland: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: false,
+    landConns: ['st petersburg', 'sweden', 'norway'],
+    seaConns: ['st petersburg south coast', 'gulf of bothnia', 'sweden']
   }, 
   galicia: {
-    type: '',
-    supply: ,
-    landConns: [],
+    type: 'inland',
+    supply: false,
+    landConns: ['warsaw', 'ukraine', 'rumania', 'budapest', 'vienna', 'bohemia', 'silesia'],
     seaConns: []
   }, 
   gascony: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: false,
+    landConns: ['burgundy', 'marseilles', 'spain', 'brest', 'paris'],
+    seaConns: ['spain north coast', ]
   }, 
   greece: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['bulgaria', 'albania', 'serbia'],
+    seaConns: ['bulgaria south coast', 'aegean sea', 'ionian sea', 'albania']
   }, 
   'gulf of lyon': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['marseilles', 'piedmont', 'tuscany', 'tyrrhenian sea', 'western mediterranean', 'spain south coast']
   }, 
   'gulf of bothnia': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['finland', 'st petersburg south coast', 'livonia', 'baltic sea', 'sweden']
   }, 
   'helgoland bight': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['north sea', 'denmark', 'kiel', 'holland', ]
   }, 
   holland: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['kiel', 'ruhr', 'belgium'],
+    seaConns: ['helgoland bight', 'kiel', 'belgium', 'north sea']
   }, 
   'ionian sea': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['albania', 'greece', 'aegean sea', 'eastern mediterranean', 'tunis', 'tyrrhenian sea', 'naples', 'apulia', 'adriatic sea']
   }, 
   'irish sea': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['liverpool', 'wales', 'english channel', 'mid-atlantic ocean', 'north atlantic ocean']
   }, 
   kiel: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['denmark', 'berlin', 'munich', 'ruhr', 'holland'],
+    seaConns: ['denmark', 'baltic sea', 'berlin', 'holland', 'helgoland bight']
   }, 
   liverpool: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['clyde', 'edinburgh', 'yorkshire', 'wales'],
+    seaConns: ['clyde', 'wales', 'irish sea', 'north atlantic ocean']
   }, 
   livonia: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: false,
+    landConns: ['st petersburg', 'moscow', 'warsaw', 'prussia'],
+    seaConns: ['st petersburg south coast', 'moscow', 'warsaw', 'prussia', 'baltic sea', 'gulf of bothnia']
   }, 
   london: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['yorkshire', 'wales'],
+    seaConns: ['yorkshire', 'north sea', 'english channel', 'wales']
   }, 
   marseilles: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['burgundy', 'piedmont', 'spain', 'gascony'],
+    seaConns: ['piedmont', 'gulf of lyon', 'spain south coast']
   }, 
   'mid-atlantic ocean': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['north atlantic ocean', 'irish sea', 'english channel', 'brest', 'gascony', 'spain north coast', 'spain south coast', 'portugal', 'western mediterranean', 'north africa']
   }, 
   moscow: {
-    type: '',
-    supply: ,
-    landConns: [],
+    type: 'inland',
+    supply: true,
+    landConns: ['sevastopol', 'ukraine', 'warsaw', 'livonia', 'st petersburg'],
     seaConns: []
   }, 
   munich: {
-    type: '',
-    supply: ,
-    landConns: [],
+    type: 'inland',
+    supply: true,
+    landConns: ['berlin', 'silesia', 'bohemia', 'tyrolia', 'burgundy', 'ruhr', 'kiel'],
     seaConns: []
   }, 
   naples: {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['apulia', 'rome'],
+    seaConns: ['apulia', 'ionian sea', 'tyrrhenian sea', 'rome']
   }, 
   'north atlantic ocean': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['norwegian sea', 'clyde', 'liverpool', 'irish sea', 'mid-atlantic ocean']
   }, 
   'north africa': {
-    type: '',
-    supply: ,
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: false,
+    landConns: ['tunis'],
+    seaConns: ['mid-atlantic ocean', 'western mediterranean', 'tunis']
   }, 
   'north sea': {
-    type: '',
-    supply: ,
+    type: 'sea',
+    supply: false,
     landConns: [],
-    seaConns: []
+    seaConns: ['norwegian sea', 'norway', 'skagerrak', 'denmark', 'helgoland bight', 'holland', 'belgium', 'english channel', 'london', 'yorkshire', 'edinburgh']
   }, 
   norway: {
-    type: '',
-    supply: ,
-
-    landConns: [],
-    seaConns: []
+    type: 'coastal',
+    supply: true,
+    landConns: ['st petersburg', 'finland', 'sweden'],
+    seaConns: ['barents sea', 'st petersburg north coast', 'sweden', 'skagerrak', 'north sea', 'norwegian sea']
   }, 
   'norwegian sea': {
     type: '',
