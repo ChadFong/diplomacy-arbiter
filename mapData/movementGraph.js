@@ -1,39 +1,60 @@
-module.exports.movementGraph = { 
+module.exports = { 
   // Multiple Coasts
   bulgaria: {
     type: 'coastal',
     supply: true,
-    landConns: ['rumania', 'constantinople', 'greece', 'serbia']
+    landConns: ['rumania', 'constantinople', 'greece', 'serbia'],
+    seaConns: []
   },
   'bulgaria east coast': {
+    type: 'coastal',
+    supply: true,
+    landConns: ['rumania', 'constantinople', 'greece', 'serbia'],
     seaConns: ['rumania', 'black sea', 'constantinople']
   },
   'bulgaria south coast': {
+    type: 'coastal',
+    supply: true,
+    landConns: ['rumania', 'constantinople', 'greece', 'serbia'],
     seaConns: ['constantinople', 'aegean sea', 'greece']
   },
 
   spain: {
     type: 'coastal',
     supply: true,
-    landConns: ['portugal', 'gascony', 'marseilles']
+    landConns: ['portugal', 'gascony', 'marseilles'],
+    seaConns: []
   }, 
   'spain north coast': {
+    type: 'coastal',
+    supply: true,
+    landConns: ['portugal', 'gascony', 'marseilles'],
     seaConns: ['portugal', 'mid-atlantic ocean', 'gascony']
   }, 
   'spain south coast': {
+    type: 'coastal',
+    supply: true,
+    landConns: ['portugal', 'gascony', 'marseilles'],
     seaConns: ['marseilles', 'gulf of lyon', 'western mediterranean', 'portugal', 'mid-atlantic ocean']
   }, 
 
   'st petersburg': {
     type: 'coastal',
     supply: true,
-    landConns: ['moscow', 'livonia', 'finland', 'norway']
+    landConns: ['moscow', 'livonia', 'finland', 'norway'],
+    seaConns: []
   }, 
   'st petersburg north coast': {
+    type: 'coastal',
+    supply: true,
+    landConns: ['moscow', 'livonia', 'finland', 'norway'],
     seaConns: ['barents sea', 'norway']
   }, 
   'st petersburg south coast': {
-    seaConns: ['livonia', 'bothnia', 'finland']
+    type: 'coastal',
+    supply: true,
+    landConns: ['moscow', 'livonia', 'finland', 'norway'],
+    seaConns: ['livonia', 'gulf of bothnia', 'finland']
   }, 
   
   switzerland: {
@@ -100,7 +121,7 @@ module.exports.movementGraph = {
     type: 'coastal',
     supply: true,
     landConns: ['prussia', 'silesia', 'munich', 'kiel'],
-    seaConns: ['baltic', 'prussia', 'kiel']
+    seaConns: ['baltic sea', 'prussia', 'kiel']
   }, 
   'black sea': {
     type: 'sea',
@@ -136,7 +157,7 @@ module.exports.movementGraph = {
     type: 'coastal',
     supply: false,
     landConns: ['edinburgh', 'liverpool'],
-    seaConns: ['norwegian sea', 'edinburgh', 'liverpool', 'north atlantic']
+    seaConns: ['norwegian sea', 'edinburgh', 'liverpool', 'north atlantic ocean']
   }, 
   constantinople: {
     type: 'coastal',
@@ -310,7 +331,7 @@ module.exports.movementGraph = {
     type: 'sea',
     supply: false,
     landConns: [],
-    seaConns: ['barents sea', 'norway', 'north sea', 'edinburgh', 'clyde', 'north atlantic']
+    seaConns: ['barents sea', 'norway', 'north sea', 'edinburgh', 'clyde', 'north atlantic ocean']
   }, 
   paris: {
     type: 'inland',
