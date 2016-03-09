@@ -1,3 +1,15 @@
+/*
+Require these into node, or into a file.  Use these objects to convert between abbreviations and fully
+qualified territory names and back.
+
+MovementGraphs.diplomacy refers keys on the fully qualified names found in these files.
+
+Coast Abbreviations converts between what users may use to abbreviate a coast to the fully qualified name
+stored in the movement graph. (this is assuming we parse user input)
+e.g., 
+bul ec separated into country and coast would be converted to bulgaria east coast, were it to be parsed
+*/
+
 var terrToAbbr = { 
   switzerland: [ 'swi', 'switz' ],
   'adriatic sea': [ 'adr', 'adriatic' ],
